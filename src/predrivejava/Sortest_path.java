@@ -24,6 +24,7 @@ public class Sortest_path {
 			}
 		}
 		
+		
 		int X2=x*x;
 		int Y2=y*y;
 		
