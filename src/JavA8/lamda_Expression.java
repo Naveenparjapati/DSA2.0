@@ -5,7 +5,6 @@ interface rectangle{
 	double area();
 }
 
-
 public class lamda_Expression {
 public static void main(String[] args)
 {
