@@ -49,4 +49,4 @@ public class longest_pallindrome_in_givem_String {
 	        }
 	        return right - left - 1;  // The length of the palindrome
 	    }
-	}
+	}}
