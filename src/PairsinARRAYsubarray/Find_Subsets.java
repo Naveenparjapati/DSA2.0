@@ -19,8 +19,8 @@ public class Find_Subsets {
 	    }
 	    
 	    public static void main(String[] args) {
-	        String str = "abc";
-	        FindSubSets(str, "", 1); // Start with index 0
+	        String str = "123";
+	        FindSubSets(str, "", 0); // Start with index 0
 	    }
 	}
 
