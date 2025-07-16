@@ -1,26 +1,51 @@
 package PairsinARRAYsubarray;
 
+import java.util.ArrayList;
+
+import java.util.List;
 public class Find_Subsets {
-	    
-	    public static void FindSubSets(String str, String ans, int i) {
-	        // Base case
-	        if (i == str.length()) {
-	            if (ans.isEmpty()) {
-	                System.out.print("null "); // Print "null" for the empty subset
-	            } else {
-	                System.out.print(ans + " "); // Print the current subset
-	            }
-	            return;
-	        }
-	        // Exclude the current character
-	        FindSubSets(str, ans, i + 1);
-	        // Include the current character
-	        FindSubSets(str, ans + str.charAt(i), i + 1);
-	    }
-	    
+	    	
 	    public static void main(String[] args) {
-	        String str = "123";
-	        FindSubSets(str, "", 0); // Start with index 0
+	
+	        String input = "abc";
+	
+	        List<String> substrings = generateSubstrings(input);
+	
+	        // Print the substrings in the required format
+	
+	        System.out.println(String.join(", ", substrings));
+	
 	    }
+	
+	    
+	
+	    public static List<String> generateSubstrings(String str) {
+	
+	        List<String> result = new ArrayList<>();
+	
+	        int n = str.length();
+	
+	        
+	
+	        // Generate all substrings
+	
+	        for (int len = 1; len <= n; len++) {          // Length of substring
+	
+	            for (int i = 0; i <= n - len; i++) {      // Starting index
+	
+	                int j = i + len;                     // Ending index
+	
+	                result.add(str.substring(i, j));
+	
+	            }
+	
+	        }
+	
+	        
+	
+	       return result;
+	
+	    }
+	
 	}
 
