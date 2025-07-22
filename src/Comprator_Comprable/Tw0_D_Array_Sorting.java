@@ -8,13 +8,17 @@ public class Tw0_D_Array_Sorting {
     public static void main(String[] args) {
         int[][] arr = {
             {1, 9},
-            {3, 5},
-            {2, 8},
-            {4, 3}
+            {0, 5},
+            {8, 8},
+            {6, 3}
         };
 
         // Sort by second column (index 1)  assending order
-       // Arrays.sort(arr, Comparator.comparingInt(o -> o[1]));
+      // Arrays.sort(arr, Comparator.comparingInt(o -> o[1]));
+        
+        //descending order
+        Arrays.sort(arr, (a, b) -> Integer.compare(b[0], a[0]));
+
         // Print sorted array
         for (int[] row : arr) {
             System.out.println(Arrays.toString(row));
