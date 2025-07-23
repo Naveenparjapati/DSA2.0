@@ -2,7 +2,7 @@ package greedyAlgo;
 
 import java.util.Arrays;
 
-public class Minimum_absolute_difrent {
+public class Minimum_absolute_difrence_pairs {
 	 public static void main(String[] args) {
 	      int[] A={4,1,8,7};
 	      int[] B={2,3,6,5};
