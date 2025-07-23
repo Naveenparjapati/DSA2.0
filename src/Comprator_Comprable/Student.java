@@ -6,6 +6,7 @@ import java.util.List;
 
 
 
+
 public class Student implements Comparable<Student> {
 	
 	int id;
@@ -59,17 +60,23 @@ public class Student implements Comparable<Student> {
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", age=" + age + "]";
 	}
-    
+
+	
+	
 	public static void main(String[] args) {
-		List<Student> list = Arrays.asList(new Student(21, "Naveen", 99),new Student(23,"Rohit",32),new Student(14,"Ram",100));
-		Collections.sort(list);
-		
-		for(Student li:list) {
-			System.out.println(li);
-		}
+		List<Student> list = Arrays.asList(new Student(3, "Ravi", 22),new Student(2,"Rohit",32),new Student(4,"Raju",21));
+                 //way 1
+		//		Collections.sort(list);
+//		
+//		for(Student li:list) {
+//			System.out.println(li);
+//		}
+		  //way 2
+Collections.sort(list);
+		//filtering the recordes base on condition
+	    //list.stream().filter(x->x.age>=22).forEach(System.out::println);
+		list.forEach(x->System.out.println(x));
 	}
-	
-	
 	
 	
 }
