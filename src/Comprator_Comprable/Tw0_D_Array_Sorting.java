@@ -33,3 +33,10 @@ public class Tw0_D_Array_Sorting {
         }
     }
 }
+//
+//Notes
+//You must use int[][] (not Integer[][]) when dealing with primitive arrays.
+//
+//Lambda expressions work best with Comparator.comparingInt(...) for performance with primitives.
+//
+//Can be extended to comparingDouble or comparingLong as well.
