@@ -64,6 +64,7 @@ public class Student1  {
     });
 
 //	list.stream().filter(x->x.age>=22).forEach(System.out::println);
+  
 	list.forEach(x->System.out.println(x));
 	}
 }
