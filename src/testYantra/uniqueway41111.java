@@ -2,7 +2,6 @@ package testYantra;
 
 public class uniqueway41111 
 {
-	
     public static int countWay(int n)
     {
 	 //base case
